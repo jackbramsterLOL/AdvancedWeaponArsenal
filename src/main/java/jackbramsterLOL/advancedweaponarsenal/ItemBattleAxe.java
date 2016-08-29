@@ -7,6 +7,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import reborncore.RebornCore;
+
 /**
  * Created by Jammer on 29/08/2016.
  */
@@ -19,7 +20,7 @@ public class ItemBattleAxe extends ItemSword implements ITexturedItem, IHandHeld
 
     @Override
     public String getTextureName(int i) {
-        return "advancedweaponarsenal:battleaxe";
+        return "AdvancedWeaponArsenal:axe";
     }
 
     @Override
@@ -29,7 +30,7 @@ public class ItemBattleAxe extends ItemSword implements ITexturedItem, IHandHeld
 
     @Override
     public ModelResourceLocation getModel(ItemStack itemStack, EntityPlayer entityPlayer, int i) {
-        return new ModelResourceLocation("advancedweaponarsenal:" + getUnlocalizedName(itemStack).substring(5), "inventory");
+        return new ModelResourceLocation("AdvancedWeaponArsenal:" + getUnlocalizedName(itemStack).substring(5), "inventory");
     }
 }
 

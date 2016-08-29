@@ -16,7 +16,7 @@ public class WeaponsTab extends CreativeTabs {
 
     @Override
     public Item getTabIconItem() {
-        return (advancedweaponarsenal.sword);
+        return (AdvancedWeaponArsenal.sword);
     }
 }
 
