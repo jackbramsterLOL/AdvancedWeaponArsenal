@@ -20,7 +20,7 @@ public class ItemBattleAxe extends ItemSword implements ITexturedItem, IHandHeld
 
     @Override
     public String getTextureName(int i) {
-        return "AdvancedWeaponArsenal:axe";
+        return "advancedweaponarsenal:axe";
     }
 
     @Override
@@ -30,7 +30,7 @@ public class ItemBattleAxe extends ItemSword implements ITexturedItem, IHandHeld
 
     @Override
     public ModelResourceLocation getModel(ItemStack itemStack, EntityPlayer entityPlayer, int i) {
-        return new ModelResourceLocation("AdvancedWeaponArsenal:" + getUnlocalizedName(itemStack).substring(5), "inventory");
+        return new ModelResourceLocation("advancedweaponarsenal:" + getUnlocalizedName(itemStack).substring(5), "inventory");
     }
 }
 
