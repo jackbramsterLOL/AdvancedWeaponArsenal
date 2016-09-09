@@ -1,4 +1,6 @@
 item.advancedweaponarsenal:katana.name=Katana
-Item.advancedweaponarsenal:battleaxe.name=Battleaxe
+item.advancedweaponarsenal:battleaxe.name=Battleaxe
+item.advancedweaponarsenal:spikedclub.name=SpikedClub
+item.advancedweaponarsenal:mace.name=Mace
 
 itemGroup.AdvancedWeapons=AdvancedWeapons

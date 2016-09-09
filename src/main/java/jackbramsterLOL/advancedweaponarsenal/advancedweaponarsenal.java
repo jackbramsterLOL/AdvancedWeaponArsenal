@@ -13,11 +13,13 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 @Mod(name = "AdvancedWeaponArsenal", modid = "advancedweaponarsenal", version = "1")
 public class AdvancedWeaponArsenal {
     public static Item sword;
-    public static Item axe;
     public static Item.ToolMaterial katanameterial = EnumHelper.addToolMaterial("katana", 0, 1000, 10.0F, 7.0F, 14);
+    public static Item axe;
     public static Item.ToolMaterial battleaxemeterial = EnumHelper.addToolMaterial("battleaxe", 0, 1000, 10.0F, 10.0F, 14);
     public static Item spikedclub;
     public static Item.ToolMaterial spikedclubmeterial = EnumHelper.addToolMaterial("spikedclub", 0, 1000, 10.0F, 7.0F, 14);
+    public static Item mace;
+    public static Item.ToolMaterial macemeterial = EnumHelper.addToolMaterial("mace", 0, 1000, 10.0F, 5.0F, 14);
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
@@ -27,6 +29,8 @@ public class AdvancedWeaponArsenal {
         registerItem(axe, "battleaxe");
         spikedclub = new ItemSpikedClub(spikedclubmeterial);
         registerItem(spikedclub, "spikedclub");
+        mace = new ItemMace(macemeterial);
+        registerItem(mace, "mace");
     }
 
     private static void registerItem(Item item, String name) {
